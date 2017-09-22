@@ -1,11 +1,12 @@
 <?php
-class tejarak
+class Tejarak
 {
 	private $api_url = "https://tejarak.com/api/%s/%s";
 	private $version = null;
 	private $url     = null;
 	private $data    = [];
 	private $header  = [];
+
 
 	/**
 	 * ready to connect to tejarak api
@@ -58,10 +59,6 @@ class tejarak
 		elseif($this->method === 'post')
 		{
 			curl_setopt($handle, CURLOPT_POST, true);
-		}
-		elseif($this->method === 'get')
-		{
-			// no thing!
 		}
 		else
 		{
@@ -120,4 +117,3 @@ class tejarak
 	}
 }
 ?>
-

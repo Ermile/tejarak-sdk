@@ -1,7 +1,7 @@
 <?php
 require '../tejarak.php';
 
-$tejarak = new \tejarak('__API TOKEN__',1);
+$tejarak = new \Tejarak('__API TOKEN__',1);
 
 $respons = $tejarak->team('post',  ['name' => '_YOUR TEAM NAME__']);
 
